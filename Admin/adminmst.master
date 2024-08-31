@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" CodeFile="adminmst.master.vb" Inherits="adminmst" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="adminstyle.css" rel="stylesheet" type="text/css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Mada:wght@300&display=swap" rel="stylesheet" />
+   
+      <style type="text/css">
+       .style1
+        {   
+            width: 100%;
+        }
+        .style3
+        {
+            height: 702px;
+        }
+        .style5
+        {
+            height: 27px;
+            text-align: center;
+            
+        }
+        .style6
+        {
+            height: 0px;
+        }
+        td
+        {
+            padding:0;
+        }
+        .adb-sty
+        {
+            padding-right:17px;
+            font-size:1.2rem;
+            font-weight:bold;
+            text-decoration:none;
+            color:Black;
+        }
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+  <div>
+        <table class="style1">
+          
+            <tr>
+                <td>
+                    <div class="nav">
+                       <div>
+                           <div><img id="logo"src="../img/logo.jpg" />
+                           </div>
+                           <ul>
+                                <li><a href="procategory.aspx">Catagory</a></li>
+                                <li><a href="product.aspx">Products</a></li>
+                                <li><a href="order.aspx">Orders</a></li>
+                                <li><a href="payment.aspx" >Payments</a></li>
+                                <li><a href="user.aspx">Users</a></li>
+                                <li><a href="complain.aspx">Feedback</a></li>
+                                 <li><a href="reports.aspx">Reports</a></li>
+                           </ul>
+                           </div>
+                       <div>
+                           <ul>
+                                 <li class="adb-sty">Admin Dashboard</li>
+                                <li><asp:LinkButton ID="btnlogout" runat="server" Text="Logout">Logout</asp:LinkButton></li>
+                           </ul>
+                       </div>
+                    </div>   
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" valign="top" width="85%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+          
+            </table>
+    </div>
+    
+    </form>
+</body>
+</html>

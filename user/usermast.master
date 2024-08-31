@@ -1,0 +1,137 @@
+﻿<%@ Master Language="VB" CodeFile="usermast.master.vb" Inherits="usermast" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="userstyle.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Mada:wght@300&display=swap" rel="stylesheet" />
+
+    
+     <style type="text/css">
+        
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {   width: 10%;
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            background-color: #ef5b01;
+        }
+        .style3
+        {
+            height: 619px;
+        }
+        .style5
+        {
+            height: 27px;
+            text-align: center;
+            
+        }
+        .head-logo
+        {
+            width: 19%;
+            padding: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+<form id="form1" runat="server">
+  <div>
+  
+        <table class="style1">
+           
+            <tr>
+                <td colspan="3">
+                  
+                    <div class="nav" style="height: 100px;">
+                       <div>
+                       <img id="logo" src="../img/logo.jpg" />
+                          
+                           <ul>
+                                 <li><a href="home.aspx" >Home</a></li>
+                                
+                                <li ><a href="cart.aspx">Cart</a></li>
+                                <li><a href="order.aspx" >My Order</a></li>
+                                
+                                <li ><a href="myprofile.aspx">My Profile</a></li>
+                                <li ><a href="help.aspx">Help/Freedback</a></li>
+                                <li><a href="aboutus.aspx" >About</a></li>
+                           </ul>
+                           </div>
+                       <div>
+                           <ul>
+                               
+                                 <li><asp:LinkButton ID="LinkButton1" runat="server" Visible="true">User</asp:LinkButton></li>
+                                <li><asp:LinkButton ID="btnlogin" runat="server" Text="Logout" Visible="true" >Login</asp:LinkButton></li>
+                                <li><asp:LinkButton ID="btnsignup" runat="server" Text="Logout">Signup</asp:LinkButton></li>
+                                <li><asp:LinkButton ID="btnlogout" runat="server" Text="Logout" Visible="true">Logout</asp:LinkButton></li>
+                           </ul>
+                       </div>
+                    </div>    
+                </td>
+            </tr>
+             <tr>
+                <td class="style3">
+                    </td>
+                <td class="style3" valign="top" width="70%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="style3">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style5" colspan="3" align="center">
+                   <div style="background-color: #101010; color: #FFFFFF; padding: 20px 0; font-family: 'Mada', sans-serif;">
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+            <div>
+                <h2 style="margin: 0; font-family: 'Dancing Script', cursive;">Auto Motive</h2>
+                <p>&copy; 2024 All Rights Reserved</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="home.aspx" style="color: #FFFFFF; text-decoration: none;">Home</a></li>
+                    <li><a href="cart.aspx" style="color: #FFFFFF; text-decoration: none;">Cart</a></li>
+                    <li><a href="order.aspx" style="color: #FFFFFF; text-decoration: none;">My Order</a></li>
+                    <li><a href="myprofile.aspx" style="color: #FFFFFF; text-decoration: none;">My Profile</a></li>
+                    <li><a href="help.aspx" style="color: #FFFFFF; text-decoration: none;">Help/Feedback</a></li>
+                    <li><a href="aboutus.aspx" style="color: #FFFFFF; text-decoration: none;">About</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@automotive.com" style="color: #FFFFFF; text-decoration: none;">info@automotive.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" style="color: #FFFFFF; text-decoration: none;">+1 234 567 890</a></p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <a href="#" style="margin-right: 10px; color: #FFFFFF; text-decoration: none;">Facebook</a>
+                <a href="#" style="margin-right: 10px; color: #FFFFFF; text-decoration: none;">Twitter</a>
+                <a href="#" style="color: #FFFFFF; text-decoration: none;">Instagram</a>
+            </div>
+        </div>
+    </div>
+                    </td>
+            </tr>
+            </table>
+                
+    </div>
+    </form>
+</body>
+ 
+</html>
